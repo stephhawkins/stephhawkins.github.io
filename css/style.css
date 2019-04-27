@@ -167,13 +167,33 @@ h1 {
   padding: 10px 15px 10px 15px;
 }
 
+.bus-line-num {
+  width: 70px;
+  height: 40px;
+  background: #FAFAFF;
+  border: 1px solid #C7C7CC;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 3px;
+}
+
+.bus-line-num h2 {
+  vertical-align: middle;
+  font-family: SFProDisplay-Bold;
+  font-size: 28px;
+  color: #000000;
+  letter-spacing: 0.34px;
+  text-align: center;
+  line-height: 34px;
+}
 /* Bus line destination */
 
 h3 {
   display: inline-block;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
   vertical-align: middle;
   width: 150px;
+  padding: 0px 0px 10px 10px;
 }
 
 /* Arrival time - right hand side info */
