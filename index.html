@@ -8,147 +8,143 @@
   </head>
   <body>
     <!-- Begin iPhone-constrained container -->
-    <section class="container">
-      <div class="status-nav">
+    <div class="container">
+      <header>
         <!-- Status bar -->
         <img src="images/status_bar.png" class="status-bar">
         <!-- Begin navigation -->
         <nav>
-          <!-- Left navigation -->
-          <img src="images/back_arrow.png" class="left-nav-arrow">
-          <div class="left-nav">
-            Stations
-          </div>
-          <!-- Center screen title -->
-          <div class="center-nav">
-            Washington & State
-          </div>
+          <ul>
+            <li><img src="images/back_arrow.png" class="left-nav-arrow"></li> <!-- Left navigation -->
+            <li><a href="#" class="left-nav">Stations</a></li>
+            <li class="center-nav">Washington & State</li> <!-- Center screen title -->
+          </ul>
         </nav>
         <!-- End navigation -->
-      </div>
+      </header>
+      <!-- Begin map -->
+      <map>
+        <!-- Bus station -->
+        <figure class="bus-station">
+          <figcaption>Washington & State Bus Station</figcaption>
+          <img src="images/bus_station.png">
+        </figure>
+        <!-- Approaching bus icons -->
+        <figure class="bus-j14">
+          <figcaption>9 min</figcaption>
+          <img src="images/bus_icon_J14.png" class="bus-icon-1">
+        </figure>
+        <figure class="bus-124">
+          <figcaption>4 min</figcaption>
+          <img src="images/bus_icon_124.png" class="bus-icon-2">
+        </figure>
+      </map>
+      <!-- Begin slider -->
       <div class="slider">
-        <!-- Begin map -->
-        <div class="map">
-          <!-- Bus station -->
-          <div class="bus-station">
-            <h6>Washington & State Bus Station</h6>
-            <img src="images/bus_station.png">
-          </div>
-          <!-- Approaching bus icons -->
-          <div class="bus-j14">
-            <h6>9 min</h6>
-            <img src="images/bus_icon_J14.png" class="bus-icon-1">
-          </div>
-          <div class="bus-124">
-            <h6>4 min</h6>
-            <img src="images/bus_icon_124.png" class="bus-icon-2">
-          </div>
-        </div>
-        <!-- Begin slider -->
         <img src="images/slider_handle.png" class="slider-handle">
         <!-- Slider headline 1 -->
-        <h1>Buses at this station</h1>
+        <h2>Buses at this station</h2>
         <!-- Bus line list -->
-        <!-- First bus line -->
-        <div class="bus-line">
-          <div class="bus-line-num">
-            <h2>124</h2>
-          </div>
-          <h3>Navy Pier</h3>
-          <div class="arrival-time">
-            <h4>4 min at</h4>
-            <h2>9:45 AM</h2>
-          </div>
-        </div>
-        <!-- Second bus line -->
-        <div class="bus-line">
-          <div class="bus-line-num">
-            <h2>J14</h2>
-          </div>
-          <h3>103rd/Stony Island</h3>
-          <div class="arrival-time">
-            <h4>9 min at</h4>
-            <h2>9:50 AM</h2>
-          </div>
-        </div>
-        <!-- Third bus line -->
-        <div class="bus-line">
-          <div class="bus-line-num">
-            <h2>151</h2>
-          </div>
-          <h3>Devon/Clark</h3>
-          <div class="arrival-time">
-            <h4>10 min at</h4>
-            <h2>9:51 AM</h2>
-          </div>
-        </div>
-        <!-- Fourth bus line -->
-        <div class="bus-line">
-          <div class="bus-line-num">
-            <h2>60</h2>
-          </div>
-          <h3>Randolph/Harbor Dr</h3>
-          <div class="arrival-time">
-            <h4>14 min at</h4>
-            <h2>9:55 AM</h2>
-          </div>
-        </div>
+        <ul>
+          <li> <!-- First bus line -->
+            <ul class="bus-line">
+              <li class="bus-line-num">124</li>
+              <li class="destination">Navy Pier</li>
+              <li class="arrival-time">
+                <p>4 min at</p>
+                <time>9:45 AM</time>
+              </li>
+            </ul>
+          </li>
+          <li> <!-- Second bus line -->
+            <ul class="bus-line">
+              <li class="bus-line-num">J14</li>
+              <li class="destination">103rd/Stony Island</li>
+              <li class="arrival-time">
+                <p>9 min at</p>
+                <time>9:50 AM</time>
+              </li>
+            </ul>
+          </li>
+          <li> <!-- Third bus line -->
+            <ul class="bus-line">
+              <li class="bus-line-num">151</li>
+              <li class="destination">Devon/Clark</li>
+              <li class="arrival-time">
+                <p>10 min at</p>
+                <time>9:51 AM</time>
+              </li>
+            </ul>
+          </li>
+          <li> <!-- Fourth bus line -->
+            <ul class="bus-line">
+              <li class="bus-line-num">60</li>
+              <li class="destination">Randolph/Harbor Dr</li>
+              <li class="arrival-time">
+                <p>14 min at</p>
+                <time>9:55 AM</time>
+              </li>
+            </ul>
+          </li>
+        </ul>
         <!-- Slider headline 2 -->
-        <h1>Buses currently out of service</h1>
-        <!-- Fifth bus line -->
-        <div class="bus-line">
-          <div class="bus-line-num">
-            <h2>4</h2>
-          </div>
-          <h3>Cottage Grove</h3>
-          <div class="arrival-time">
-            <h4>Buses resume at</h4>
-            <h2>12:10 AM</h2>
-          </div>
-        </div>
-        <!-- Sixth bus line -->
-        <div class="bus-line">
-          <div class="bus-line-num">
-            <h2>20</h2>
-          </div>
-          <h3>Madison</h3>
-          <div class="arrival-time">
-            <h4>Buses resume at</h4>
-            <h2>12:10 AM</h2>
-          </div>
-        </div>
-        <!-- Seventh bus line -->
-        <div class="bus-line">
-          <div class="bus-line-num">
-            <h2>157</h2>
-          </div>
-          <h3>Streeterville/Taylor</h3>
-          <div class="arrival-time">
-            <h4>Buses resume at</h4>
-            <h2>6:00 AM</h2>
-          </div>
-        </div>
+        <h2>Buses currently out of service</h2>
+        <!-- Bus line list -->
+        <ul>
+          <li> <!-- Fifth bus line -->
+            <ul class="bus-line">
+              <li class="bus-line-num">4</li>
+              <li class="destination">Cottage Grove</li>
+              <li class="arrival-time">
+                <p>Buses resume at</p>
+                <time>12:10 AM</time>
+              </li>
+            </ul>
+          </li>
+          <li> <!-- Sixth bus line -->
+            <ul class="bus-line">
+              <li class="bus-line-num">20</li>
+              <li class="destination">Madison</li>
+              <li class="arrival-time">
+                <p>Buses resume at</p>
+                <time>12:10 AM</time>
+              </li>
+            </ul>
+          </li>
+          <li> <!-- Seventh bus line -->
+            <ul class="bus-line">
+              <li class="bus-line-num">157</li>
+              <li class="destination">Streeterville/Taylor</li>
+              <li class="arrival-time">
+                <p>Buses resume at</p>
+                <time>6:00 AM</time>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
       <!-- End slider -->
       <!-- Begin 3 tab bar -->
-      <div class="tab-bar">
-        <!-- Tab one -->
-        <div class="tab">
-          <img src="images/directions_icon.png" class="tab-bar-icon">
-          <h5>Directions</h5>
-        </div>
-        <!-- Tab two -->
-        <div class="tab selected">
-          <img src="images/stations_icon.png" class="tab-bar-icon">
-          <h5>Nearby Stations</h5>
-        </div>
-        <!-- Tab three -->
-        <div class="tab">
-          <img src="images/favorites_icon.png" class="tab-bar-icon">
-          <h5>Favorites</h5>
-        </div>
-      </div>
-    </section>
+      <footer>
+        <ul class="tab-bar">
+          <!-- Tab one -->
+          <li class="tab">
+            <img src="images/directions_icon.png" class="tab-bar-icon">
+            <h3>Directions</h3>
+          </li>
+          <!-- Tab two -->
+          <li class="tab selected">
+            <img src="images/stations_icon.png" class="tab-bar-icon">
+            <h3>Nearby Stations</h3>
+          </li>
+          <!-- Tab three -->
+          <li class="tab">
+            <img src="images/favorites_icon.png" class="tab-bar-icon">
+            <h3>Favorites</h3>
+          </li>
+        </ul>
+      </footer>
+    </div>
     <!-- End container -->
   </body>
 </html>
